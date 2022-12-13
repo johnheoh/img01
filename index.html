@@ -1,19 +1,34 @@
-<!DOCTYPE html> <html lang="ko"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>이스라엘</title><link rel="stylesheet" href="style.css"></head> <body>     <div id="slideShow">       <div id="slides"><img src="http://drive.google.com/uc?export=view&id=1mMVjQWenLabL8pMe7PH1AT1_lBrbW16r" alt=""><img src="http://drive.google.com/uc?export=view&id=1lhVeFbMQPqUK0E5QClDjhbwSrD2TgL8A" alt=""><img src="http://drive.google.com/uc?export=view&id=1krSdppUrjMFZHkQ6fdHUc0CFHsQjpftA" alt=""><img src="http://drive.google.com/uc?export=view&id=1krSdppUrjMFZHkQ6fdHUc0CFHsQjpftA" alt=""><img src="http://drive.google.com/uc?export=view&id=1jKdmd0kDmur2mLE-gvE70Z10vtKnYZXC" alt="">        <button id="prev">&lang;</button>         <button id="next">&rang;</button>       </div>     </div>    <script src="slideshow.js"></script> 
-
-<script>
-function copy_to_clipboard() {
-  var copyText = document.getElementById(""content"");
-  copyText.select();
-  document.execCommand(""Copy"");
-}
-</script><hr><audio id=""audio"" src="""" controls></audio>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사진</title>
+<link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+<p>
+<button id="prev1">&lang;</button>
+<button id="next1">&rang;</button>
+</p>          
+    
+    
+<hr> 
+    <p>
+<audio id="audio" src="" controls></audio>
   <br><br>
-  <select id=""select"" size=""3"" onchange=""play()""><option value=""http://drive.google.com/uc?export=view&id="">so much grace</option><option value=""http://drive.google.com/uc?export=view&id="">2</option><option value=""http://drive.google.com/uc?export=view&id="">3</option></select><button id=""play"" onclick=""play()"">play</button>
-  <button id=""play"" onclick=""next()"">next</button>
+  <select id="select" size="3" onchange="play()">
+    <option value="http://drive.google.com/uc?export=view&id=1MICqF9SZXgrmlTHf92fGii2-C2LQqiP-">So Much Grace</option>
+    <option value="http://drive.google.com/uc?export=view&id=1MEJpyhMh9zMR76jOb9LTK6OLBw44eHwQ">Ani Chofsh</option>
+    <option value="http://drive.google.com/uc?export=view&id=18mUZxL7JKgI7UyUWtA07VAXK01nzvEWN">Count On Me</option>
+  </select>
+  <button id="play" onclick="play()">play</button>
+  <button id="play" onclick="next()">next</button>
 
   <script>
-    var audio = document.getElementById(""audio"");
-    var sel = document.getElementById(""select"");
+    var audio = document.getElementById("audio");
+    var sel = document.getElementById("select");
     var len = sel.length;
     var idx = 0;
     var playon = false;
@@ -54,4 +69,25 @@ function copy_to_clipboard() {
 
      }
   </script>
-</body> </html>
+  </p>
+<hr>
+    
+<div id="slideShow">
+<div id="slides">
+<img src="https://source.unsplash.com/gKk9rpyDryU" alt="">
+<img src="https://source.unsplash.com/gKk9rpyDryU" alt="">
+<img src="http://drive.google.com/uc?export=view&id=1FLLDVeGoKRiwtg3mEDPK6NwaXF_rxsIL
+" alt="">
+<img src="http://drive.google.com/uc?export=view&id=15GStmP923-eo6-eBX7se5evI7NmOKDrr
+" alt="">
+<img src="http://drive.google.com/uc?export=view&id=1aG5AWIvqyv890swKP4MRkef8SaMLSFB4
+" alt="">
+</div>                 
+</div>
+
+<script src="slideshow.js"></script>
+
+   
+    
+</body>
+</html>
